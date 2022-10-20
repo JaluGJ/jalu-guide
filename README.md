@@ -1,5 +1,7 @@
     (si descargaste esto, te recomiendo que lo abras con el preview de VSCode)
 
+>Si este repo les resultó útil, les agradecería que le den una estrellita ⭐ y que lo compartan a quienes creen que les sería util.
+
 # JALU-GUIA DE GITHUB PARA UN PF ORDENADO 
 
 Hola! Este md es una guía practica para las configuraciones rapidas y simples de github junto a comandos, para poder hacer el pf en herny y muchos de estos comandos los utilizaras en el futuro en tu trabajo.  
@@ -8,11 +10,18 @@ REITERO, ES UNA GUIA SIMPLE, SE PUEDEN HACER COSAS MAS COMPLEJAS Y TAMBIEN ELEVA
 - [Índice](#jalu-guia-de-github-para-un-pf-ordenado)
   - [Hagamos el repo](#crear-el-repositorio)
   - [Añadamos gente](#añadir-miembros-colaboradores-al-repositorio)
-  - [Nos vamos a por las ramas](#crear-ramas-y-protegerlas)
+  - [Echamos raices seguras](#crear-ramas-y-protegerlas)
     - [Creamos ramas](#crear-rama)
     - [Las protegemos](#proteger-rama)
-  - [Hora de trabajar](#moverse-por-las-ramas-y-definir-carpetas)
-  - [La santa comanblia]()
+  - [Nos vamos por las ramas](#moverse-por-las-ramas-y-definir-carpetas)
+    - [Comandos Git](#comando-de-git)
+    - [El primer Pull request](#pull-request)
+  - [Hora de trabajar](#hora-de-trabajar)
+  - [La santa comand-blia](#biblia-de-comandos-para-trabajar)
+    - [**Antes** de trabajar](#lo-pasos-que-debemos-hacer-antes-de-empezar-a-trabajar)
+    - [**Despues** de trabajar](#los-pasos-que-debemos-hacer-despues-de-terminar-de-trabajar)
+    - [Mezclamos en github](#mezclar-rama)
+  - [Final del README](#felicitaciones-sigan-trabajando)
 
  ## Crear el repositorio 
 
@@ -23,6 +32,8 @@ REITERO, ES UNA GUIA SIMPLE, SE PUEDEN HACER COSAS MAS COMPLEJAS Y TAMBIEN ELEVA
 Entra a github.com y, al lado del menu de su usuario (donde aparece su foto en un pequeño circulo) tienen un simbolo  **"+"** al clickear, ven la opcion de __"new repository"__ el cual los dirije directamente para crear un nuevo repositorio. Le dan un nombre al repositorio. Les recomiendo fuertemente que le den el nombre que va a tener su proyecto, y no "PF-Henry-XX".  
 Luego conservan la selección de que sea "public" y **no** añadan ni README file ni .gitignore aun. Esto es para que github les permita  les de los pasos para hacer la clonacion y preparar el repositorio.  
 Una vez dado el nombre, le dan a la opcion de "create repositoy" y luego, el dueño del respositorio sigue los pasos indicados para crear el repositorio. Y si, hacer todos los pasos de la primer opcion, desde el comando `echo "# XXX" >> README.md` hasta el ultimo comando `git push -u origin main`
+
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ## Añadir miembros _colaboradores_ al repositorio
 
@@ -38,6 +49,8 @@ En este momento, piden los usuarios de el equipo, y añaden a los colaboradores.
 
 Una vez finalizado este paso, es hora de crear las protecciones y las ramas
 
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
+
 ## Crear Ramas y Protegerlas
 
 ---
@@ -46,6 +59,8 @@ Una vez finalizado este paso, es hora de crear las protecciones y las ramas
 
 Ya el repositorio esta creado y estan añadidos todos los colaboradores. Si seguiste correctamente los pasos anteriores, tu repositorio debería estar ubicado sobre una rama llamada `main` y ya no debería existir una rama llamada `master`. 
 >Si aun tienes una rama llamada master, te recomiendo que hagas los pasos que te indica github para subir un repo ( es decir, la parte de comandos que van desde `echo...` hasta el `git push...`)
+
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ### **Crear Rama**
 
@@ -65,6 +80,8 @@ Bien, existen 2 maneras de crear ramas, por `comandos` y a traves de la pagina d
 >       git push -u origin dev
 >
 >+ Si vuelves a tu github, podras ver, selecionando donde dice `main`, que la rama ya está creada  
+
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ### **Proteger Rama**
 
@@ -89,6 +106,8 @@ Los siguientes son los pasos necesarios para proteger una rama (esto deben hacer
 >5. Van al final de la pagina y le dan al boton verde que dice `Create`
 
 Y listo, ya tienen protegidas las rutas.
+
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ## Moverse por las ramas y definir carpetas
 
@@ -131,14 +150,15 @@ Al entrar al repositorio, vas a encontrar un cartel en el que tiene el nombre de
 
 >_Por ahora, como eres el administrador del repo, solo tienes que hacer lo siguiente una vez_
 
-Como estas haciendo un pull hacia dev, y anteriormente protegimos a dev, te va a aparecer un dos circulos rojos con una x, indicando que es requerida una review y que el mergeo esta bloqueado. Ya que tu creaste el repositorio, tu y solo tu tienes la posibilidad de saltearte las protecciones, seleccionando la opcion `merge withour waiting for requirementes to be met`. 
+Como estas haciendo un pull hacia dev, y anteriormente protegimos a dev, te va a aparecer un dos circulos rojos con una x, indicando que es requerida una review y que el mergeo esta bloqueado. Ya que tu creaste el repositorio, tu y solo tu tienes la posibilidad de saltearte las protecciones, seleccionando la opcion `merge without waiting for requirementes to be met`. 
 
 Lo que haras será tildar esa opcion y cliquear luego el boton `Merge pull request` que te aparecerá en rojo.    
-Mas adelante, precisamente en [mezclar rama](#mezlar-rama) vamos a volver al tema para hacer las cosas correctamente.  
+Mas adelante, precisamente en [mezclar rama](#mezclar-rama) vamos a volver al tema para hacer las cosas correctamente.  
 Ya, finalizado lo reciente, ahora has subido las carpetas y los archivos de boiler al respositorio. 
 
 >_Importante, para que las carpetas se suban, tal como puse en el boiler, las carpetas tienen que tener al menos un archivo dentro que contenga, porque sino, **no se sube la carpeta**_
 
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ## Hora de trabajar
 
@@ -149,18 +169,20 @@ Ya, finalizado lo reciente, ahora has subido las carpetas y los archivos de boil
 Ahora que el repositorio está subido y actualizado, todos los integrantes del grupo pueden clonar el respositorio en cada una de sus computadoras para comenzar a trabajar.  
 Pero, antes de ponerse a trabajar hay unos pasos que es ***NECESARIO*** hacer. Deben seguir la [biblia de comandos](#biblia-de-comandos-para-trabajar) que, en este [README.md](./README.md) la pueden encontrar completa con explicaciones. En el archivo [github-commands.md](./github-commands.md) tendrán la lista sin explicaciones, y en el orden que deben hacerlas.
 
-
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
 
 ## Biblia de comandos para trabajar
 
+---
+
 ### Lo pasos que debemos hacer ***ANTES*** de empezar a trabajar.
 
->| Comando | Funcionalidad | Sugerecias / Info |
->|---|---|---:|
->| ``git checkout dev`` | Te posicionaras sobre la rama `dev` | `checkout` es utilizado para navegar entre las distintas ramas |
->| `git pull origin dev` | Traeras los ultimos cambios que haya en la rama `dev`, que es donde deberian estar los ulimos cambios hecho por el equipo | `pull`, bien traducido del ingles es "traer/tirar", es utilizado para traer, de donde especifiques, todos los archivos que haya en esa rama o repo|
->| `git checkout -b` [rama de trabajo]| "`-b`" creará la rama con el nombre que designes, y "`checkout`" te llevara hacia esa rama|*[rama de trabajo]*: sera el nombre de la rama en la que trabajaras. Ponle un nombre significativo |
->| `git push -u origin` [rama de trabajo]| Sube los archivos que tengas en commit. <br> "`-u`" incluye la rama que creaste en el pusheo.| Siempre que crees una nueva rama, haz un push on `-u` porque eso subirá la rama. Antes que esto, la rama aún no existe en el repositorio |
+>| Paso | Comando | Funcionalidad | Sugerecias / Info |
+>|---:|:---|:---|:---|
+>| 1 | ``git checkout dev`` | Te posicionaras sobre la rama `dev` | `checkout` es utilizado para navegar entre las distintas ramas |
+>| 2 | `git pull origin dev` | Traeras los ultimos cambios que haya en la rama `dev`, que es donde deberian estar los ulimos cambios hecho por el equipo | `pull`, bien traducido del ingles es "traer/tirar", es utilizado para traer, de donde especifiques, todos los archivos que haya en esa rama o repo|
+>| 3 | `git checkout -b` [rama de trabajo]| "`-b`" creará la rama con el nombre que designes, y "`checkout`" te llevara hacia esa rama|*[rama de trabajo]*: sera el nombre de la rama en la que trabajaras. Ponle un nombre significativo |
+>| 4 | `git push -u origin` [rama de trabajo]| Sube los archivos que tengas en commit. <br> "`-u`" incluye la rama que creaste en el pusheo.| Siempre que crees una nueva rama, haz un push on `-u` porque eso subirá la rama. Antes que esto, la rama aún no existe en el repositorio |
 
 **Ahora es tiempo de trabajar**  
 ***Work in progress •••***  
@@ -168,34 +190,73 @@ Pero, antes de ponerse a trabajar hay unos pasos que es ***NECESARIO*** hacer. D
 ### Los pasos que debemos hacer ***DESPUES*** de terminar de trabajar  
 _Existen dos formas para hacer esto. la otra forma la encuentran en el archivo [source-control.md](./source-control.md)_
 
->| Comando | Funcionalidad | Sugerecias / Info |
->|---|---|---:|
->| `git add .` |Esto añadira **todos** los archivos a los cambios momentaneos que luego serán subidos| Sugiero ir al *soruce control* para corroborar que seran comiteado solo aquellos archivos que nosotros queremos |
->| `git commit -m` "[detalle]" | Esta linea de codigo,  ||
->| `git checkout dev` |||
->| `git pull origin dev` |||
->| `git checkout` [rama de trabajo] |||
->| `git merge dev` |||
->| `git push` |||
-    --- RECIEN AHORA PUEDE EMPEZAR A TRABAJAR EN EL CODIGO ---
-    --- UNA VEZ TERMINAN DE TRABAJAR, HACEN LO QUE SIGUE ---
+> | Paso | Comando | Funcionalidad | Sugerecias / Info |
+> |---:|:---|:---|:---|
+> | 1 | `git add .` |Esto añadira **todos** los archivos a los cambios momentaneos que luego serán subidos. | Sugiero ir al *soruce control* para corroborar que seran comiteado solo aquellos archivos que nosotros queremos. |
+> | 2 | `git commit -m` "[detalle]" | Esta linea de codigo, pasara a almacenar, de forma segura, los archivos que añadiste anteriormente. Esto es guardado en tu directorio git local. | Aquí  vas a guardar como una especie de "captura" de los archivos, sobre la rama en la que has trabajado. <br> [Aqui](./commits-messages.md) hay buenas practicas en los mensajes |
+> | 3 | `git checkout dev` | Te posicionaras sobre la rama `dev`. | `checkout` es utilizado para navegar entre las distintas ramas. |
+> | 4 | `git pull origin dev` | Traeras los ultimos cambios que haya en la rama `dev`, que es donde deberian estar los ulimos cambios hecho por el equipo. | Este paso es **ULTRA** necesario, porque si alguien trabajó y subio cambios mientras trabajabas, aquí te actualizaras. |
+> | 5 | `git checkout` [rama de trabajo] | Te posicionaras, nuevamente, sobre la rama en la que estuviste trabajando _(la que creaste anteriormente antes de ponerte a codear)_. | Otro paso muy necesario, porque trabajaste aquí, y tus modificaciones se encuentran en esta rama. |
+> | 6 | `git merge dev` | Unirá lo que tienes en la rama `dev` con la rama en la que estas posicionado | Por esto es completamente necesario el 3er y 4to paso. Actualizaras tu rama `dev` y mezclaras lo que hay con lo que hiciste. En caso de conflicto, revisar [merge-conflict.md](./merge-conflict.md) |
+> | 7 | `git push` | Subirás la rama en la que estas posicionado al repositorio de Github, con todos los archivos modificados | Pueden poner `git push origin` [rama de trabajo] por si les da más confianza |
 
-    git add . (o, mejor dicho, todos los archivos que van al commit)
-    git commit -m "bla, bla" 
+Terminados estos pasos, es tiempo de ir a github y actualizar la rama `dev` con los cambios que has hecho mientras trabajabas, es decir vas a mezclar ramas.
 
-    ("ADD / userModel "
-    "FIX / userModel"
-    "BUG/ UserModel"
-    "ADD / UserRoute, getUsers Create)
+### Mezclar Rama
 
-    git checkout dev
-    git pull origin dev (esto se hace siempre, por si alguien hizo cambios mientras trabajabas)
-    git checkout (nombre de la rama en que se trabajo) "UserModel"
-    git merge dev (ver si aparecen conflictos, si aparecen solucionarlos)
-    (si hay conflictos, resolverlos. y volver a hacer un commit)
-    git push
+>_Oh santo github, porfavor, que no haya conflictos_
 
-    Hacer el pull request en github
-    (visual te tira un Link.... el link largo... con ctrl + click, vas a la direccion y ahi te da para hacer el pull request)
+Si hicieron todo bien hasta ahora, y siguieton correctamente lo pasos, no deberian tener ningun problema para unir la rama que crearon y en la que trabajaron, con la rama `dev`.  
+Lo que sigue es ir hacia el repositorio en Github y existen dos posibilidades.  
 
-### Mezlar Rama
+1. Que aparezca un cartel que tiene el nombre de la rama que creaste y que al final tenga un recuadro verde que diga `Compare & pull request`
+2. Que no aparezca el cartel y debas hacerlo a mano.  
+
+>En el 1er caso, lo que debes hacer es lo mismo que antes. Hacerla Click a `Compare & pull request` y luego tendras un recuadro donde poder escribir texto.  
+
+>En el 2do caso, deberan crear ustedes el pull request a mano. Para ello, se van a la opcion al lado de `⊙ Issues` que se llama `Pull requests` y cliquean la opción **New pull request**.  
+>Esto mostrara ahora una barra con lo siguiente
+><select>
+>    <option>base: main</option>
+>    <option selected>base: dev</option>
+>    <option>base: otra rama</option>
+></select>
+>⬅
+><select>
+>    <option>compare: main</option>
+>    <option selected>compare: dev</option>
+>    <option>compare: otra rama</option>
+></select>
+> en la que deberan elegír de **base** a `dev` y en **compare**, la rama donde estuvieron trabajando.  
+>
+>>_**Base** hace referencia a que rama va a ir y **Compare** es la rama de donde viene_  
+>
+>Asegurado de que rama a que rama va a ir, cliquean el boton verde `create pull request`
+
+ _A partir de aqui, es igual en ambos casos_
+
+> _Recomiendo fuertemente que escriban que fueron los cambios realizados y dar una breve explicacion de los cambios en ese campo de texto_  
+>Tambien recomiendo que revisen de donde hacia donde se mezclan las ramas. Que diga **base:dev** y **compare:**[rama de trabajo] 
+
+Luego de dar la breve descripcion y corroborar que tenga titulo, le dan click a `Create pull request`.  
+A pesar de que los colaboradores recibirán un mail sobre el pull request, es mejor avisarle a uno de tus compañeros que revisen los cambios. Aquella personas que vayan a aprobar el codigo, deben revisarlo primero y luego aprobarlo.
+
+Una de las personas del equipo, _(cualquiera, menos quien generó el pull request)_ debe aprobar el cambio. Para ello, el colaborador ingresará al repositorio, y entrará a la opción llamada `Pull request` ubicada al costado de `⊙ Issues`.  
+Al ingresar, podra divisar que hay una opcion con un logo en verde con el nombre del **título** que colocó el creador del **PR**  
+Lo seleccionará y cliqueará en la opción ***"Files Changed"*** en donde podrá ver todos los cambios hechos por la persona que creo el pull request. 
+
+>Recomiendo leer los cambios hechos para tener una noción e idea de que cambios hizo la otra persona, y sobre que archivos.A su vez, corroborar que tanto el nombre de variables y codigo, sigan los estandares propuestos por el grupo.
+
+Luego de revisado los archivos, deberá aprobarlos _(o rechazarlos)_. Para ello, cliqueara el boton verde `review changes` y tildará la opcion **aprove** en caso de aprobarlo, **Request Changes** en caso de rechazarlo y pedir cambios.  
+
+> **Request Changes** no implica que no pueda ser aprobado por otras personas, y sea finalmente unido a la rama `dev`.  
+
+Una vez aprobado, en la opcion **conversation** podran observar que los circulos rojos con una X, han pasado a tener una tilde verde, y la opcion que dice "merge pull request" se ha habilitado con un color verde.  
+Cliquean sobre ese boton verde y mergean la rama junto con `dev`.   
+Resuelto eso, ya unieron su rama con la de `dev`
+
+[_Volver al indice_](#jalu-guia-de-github-para-un-pf-ordenado)
+
+# Felicitaciones! Sigan trabajando!
+
+Si este repo les resultó útil, les agradecería que le den una estrellita ⭐ y que lo compartan a quienes creen que les sería util.
