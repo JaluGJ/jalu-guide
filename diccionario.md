@@ -23,6 +23,7 @@
 |`git remote`| Administrar un conjunto de repositorios rastreados |
 |`git remote add origin` [url repo]| Conecta tu instancia de Git con un el repositorio remoto ubicado en ***[url repo]*** |
 |`git stash`| Reserva los cambios en un directorio "sucio" aparte (recomiendo investigar) |
+|`gitk`| El navegador de repositorio de Git |
 |``|  |
 
 ## npm
