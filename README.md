@@ -20,7 +20,7 @@ REITERO, ES UNA GUIA SIMPLE, SE PUEDEN HACER COSAS MAS COMPLEJAS Y TAMBIEN ELEVA
   - [La santa comand-blia](#biblia-de-comandos-para-trabajar)
     - [**Antes** de trabajar](#lo-pasos-que-debemos-hacer-antes-de-empezar-a-trabajar)
     - [**Despues** de trabajar](#los-pasos-que-debemos-hacer-despues-de-terminar-de-trabajar)
-    - [Mezclamos en github](#mezclar-rama)
+    - [Mezclamos ramas desde github](#mezclar-rama)
   - [Final del README](#felicitaciones-sigan-trabajando)
 
  ## Crear el repositorio 
