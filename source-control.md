@@ -29,12 +29,12 @@ Ya, cuando hagas un cambio, te van a aparecer (como en la imagen) un archivo, qu
 
 ## Tablita de letras y sus significados
 
-|Letra|Significado|
+|Letra <br> Simbolo|Significado|
 |---|---|
 | U | _Unstaged_ No hay registro de este archivo, usualmente aparece en archivos nuevos a añadir|
-| C | _Conflict_ Hay conflictos entre este archivo y lo que hay en el repo/rama [Ver resoulcion de conflictos](./merge-conflict.md "Acá vas a encontrar como resolver un conflicto ") |
-| M | _Modified_ Es decir, fue modificado y aun no fue subido al repo |
 | D | _Deleted_ Los archivos con la letra D, han sido eliminados |
+| M | _Modified_ Es decir, fue modificado y aun no fue subido al repo |
+| ! | _Conflict_ Hay conflictos entre este archivo y lo que hay en el repo/rama [Ver resoulcion de conflictos](./merge-conflict.md "Acá vas a encontrar como resolver un conflicto ") |
 
 >A menos que sea conflicto, no es TAN necesario que sepas sobre estos estados... hoy, ahora, que estás haciendo el PF. Tal vez, mañana, es necesario que lo sepas.
 
