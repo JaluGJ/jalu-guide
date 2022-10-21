@@ -1,3 +1,7 @@
 console.log("hola")
 
-"no me importa nada"
+function algo () {
+  console.log("algonuevo")
+}
+
+"intento hacer este error funcionar"
