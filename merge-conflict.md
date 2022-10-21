@@ -1,5 +1,10 @@
 # Si llegaste acá, que no panda el cunico©
 
+> - [Índice](#si-llegaste-acá-que-no-panda-el-cunico© "índice")
+>   - [Solucion 1](#método-1-source-control-y-file-comparator "solucion 1")
+>   - [Solucion 2](#método-2-merge-editor "solucion 2")
+
+
 Y, aparecio un conflico en el mergeo, luego de hacer `git merge dev` y te apareció, en consola, algo así
 
 ```
@@ -54,3 +59,20 @@ Una vez hecho el enter, puedes proceder con el git push.
 
 Cuando entras, desde el source control, al archivo que está en conflicto (como mostramos en la parte anterior) podras divisar en la parte inferior derecha, un boton que dice **Resolve in Merge Editor** o **Resolver en editor de mergeo**.  
 Al hacerle click, podras divisar lo que coloco en la siguiente imagen, que es otro editor de mergeo. Este tiene varias funciones, pero por ahora, veremos las basicas
+
+![merge-editor](./Images/merge-editor.png "merge-editor")
+
+Aquí tambien tienes los accept, como antes, pero los tienes separados en `Accept incoming|Accept Both` y `Accept Current|Accept Both`, la ventaja que supone esto, representa en poder ver, lado a lado, las diferencias en el codigo. sumado a que, a medida que vas aceptando las diferentes partes de codigo, se muestran, en el recuadro de abajo, cómo va quedando el código como resultado final.
+
+> DETALLE: no siempre va a aparecer esta opcion de Accept Incoming, etc. A veces, apareceran unos recuadritos oscuros, que representan una linea, o una sección de codigo, en la que es necesario elegir solo uno de las dos partes del codigo. Cuando le hacen click, en ese cadradito que se ubica sobre la izquierda aparecera un pequeño circulo blanco, que representara que parte del codigo se quedará.
+
+Una vez resueltos los conflictos, podran ver que, la opción "Complete Merge" se liberará, restando 0 confictos a solucionar. Cuando le dan click al boton `Complete Merge` se solucionara el conflicto y podran ver, desde el **Source Control** la misma imagen que antes 
+
+![sorce-control](./Images/merge-conflict-2.png "source-control")
+
+en la que lo cambios ya están en zona de "Staged Changes", permitiendo así, hacer el commit y luego el push, del mismo modo que en el otro caso (Enter en la consola, luego git push) .
+
+LISTO, NO HAY MAS CONFLICTOS
+>_Cabe destacar que el conflicto aquí generado es simple y no tiene tanta profundidad debido a que es en modo de ejemplo._
+
+[Volver al indice](#si-llegaste-acá-que-no-panda-el-cunico© "inicio")
