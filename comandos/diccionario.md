@@ -20,8 +20,11 @@
 |`git push`| Actualiza un repositorio remoto con los ultimos cambios generados |
 |`git push origin` [nombre]| Actualiza la rama ***[nombre]*** un repositorio remoto con los ultimos cambios generados en esa rama |
 |`git push -u origin` [nombre] | Sube la rama ***[nombre]*** al re |
-|`git remote`| Administrar un conjunto de repositorios rastreados |
-|`git remote add origin` [url repo]| Conecta tu instancia de Git con un el repositorio remoto ubicado en ***[url repo]*** |
+|`git remote`| Podras ver una lista con los nombre a los distintos repositorios remotos creados con el comando `git remote add` _[nombre]_ [url repo] |
+|`git remote rename` [nombre viejo] [nombre nuevo] | Cambia el nombre de la referencia de repositorio remoto ***[nombre viejo]*** por ***[nombre nuevo]*** |
+|`git remote remove` [nombre]| Borra la conexion remota al repositorio con referencia ***[nombre]*** |
+|`git remote set-url` [nombre] [newURL] [oldURL]| Reemplaza la ***[oldURL]*** (url vieja) por ***[newURL]*** (url nueva) en la conexion remota llamada ***[nombre]*** |
+|`git remote add` _[nombre]_ [url repo]| Conecta tu instancia de Git con un el repositorio remoto ubicado en ***[url repo]*** y la referencia es ***[nombre]*** |
 |`git stash`| Reserva los cambios en un directorio "sucio" aparte (recomiendo investigar) |
 |`gitk`| El navegador de repositorio de Git |
 |``|  |
