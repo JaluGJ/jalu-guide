@@ -15,11 +15,11 @@ Te doy la bienvenida a esta guía para empezar tu proyecto. A continuación te d
 
 - Comienzos de un proyecto
   - [Comienzos del repo. Guía github](./github/README.md "Comenzar un repo y no morir en el intento")
-  - [Bases de datos](./dataBase "Bases de datos")
+  <!-- -  [Bases de datos](./dataBase "Bases de datos")
     - [Postgress y Pgadmin](./postgresql/README.md "relacionales?")
     - [MongoDB, MongoAtlas y Mongoose](./mongodb/README.md "no relacionales?") 
   - 
-  - 
+  - -->
 - Guías de comandos / extras  
   - [Comandos github](./comandos/github-commands.md 'La famosa bibila de comandos para trabajar y no matarse entre el grupo')
   - [Diccionario de comandos en general](./comandos/diccionario.md 'Acá están todos los comandos que conozco y me fueron utiles')
