@@ -7,11 +7,12 @@ Bienvenido a la pequeña guía para instalar PostgreSQL junto a pgAdmin (que, po
 
 - [Instalacion](#instalar-postgresql-y-pgadmin "The best base de datos relacional gratuita")
   - [Windows](#windows "Vamos con windor")
-    - [Configuracion del PATH](#lo-que-sigue-no-es-tan-nescesario "variable de entorno")
-  - [Linux](#linux)
-- [SQL shell](#sql-shell)
-  - [Comandos básicos SQL](#comandos-sql)
-- [pgAdmin4](#pgadmin)
+  - [Linux](#linux "El SO que esta en todo")
+- [SQL shell](#sql-shell "La Consola de Postgres")
+  - [Comandos básicos SQL](#comandos-sql "Algunos comandos")
+- [pgAdmin4](#pgadmin "Con interfaz grafica")  
+  - [pgAdmin4 en Windows](#configurar-pgadmin-en-windows "windoooor")
+  - [pgAdmin4 en Ubuntu](#configurar-pgadmin-en-ubuntu "Ubuntu!")
 
 ## Instalar PostgreSQL y pgAdmin
 
@@ -20,56 +21,31 @@ Por si no quieres ver el video, a continuación te dejo los pasos, paso por paso
 
 > 1. Ir a la pagina oficial de [PostgreSQL](https://www.postgresql.org/ "Haz click aquí para ir a la pagina"). 
 > 2. Cliquear el boton "Download" o "Descargar" _(Esto te dirigirá a las opciones de descarga)_
->> ### ___Windows___  
->>> _Un pequeño video que usé de guía la vez que lo instalé yo_  
->>>[PostgreSQL Instalación en Windows 10- FaztCode](https://www.youtube.com/watch?v=cHGaDfzJyY4)
->>1. Dentro de las opciones de paquetes, seleccionas la opcion que dice _"Windows"_  
->>2. En la nueva pestaña, cliquea en __"Download the installer"__ _(Esto te dirigira  a otra pestaña)_  
->>3. Selecciona la ultima version soportada dentro de la lista de __"Windows x86-64"__ _(Esto te hará descargar el instalador .exe)_  
->>4. Una vez terminó la descarga, ejecutas el instalador
->>>_Es posible que veas que instale Microsoft Visual C++ y otras cosas. Tranqui, que son cosas necesarias para que se instale correctamente_  
->>4. Una vez aparece el instalador, le das a __"Siguiente"__.
->>5. Te aparecerá el directorio donde se instalará. Puedes cambiar esta ruta si o deseas. Le das a __"Siguiente"__  
->>6. Te aparecerán las siguientes opciones tildadas, que son los programas que vas a instalar. _(Recomiendo dejar tildado todo para que se instale y presionar __"Siguiente"__)_
->>>|Opcion|¿Qué es?|
->>>|---|---|
->>>|PosgreSQL Server|El servidor de base de datos como tal|
->>>|pgAdmin 4| Herramienta visual para gestionar las bases de datos de PostrgesSQL. Hace bastante mas sencillo todo|
->>>|Stack Builder| Manejador de paquetes que permite descargar e instalar herramientas y drivers adicionales para PostgreSQL |
->>>|Command Line Tools| Esto debería permitirte ejecutar PostgreSQL desde cualquier consola de windows, sin necesitar de una consola extra o usar PG admin|
->>7. Te aparecerá dode se instalará todo. Cliquea a __"Siguiente"__
->>8. Ahora deberás definir una contraseña. Te recomiendo que la anotes en algun lado, y que no sea algo tan complicado para recordarla facilmente, ya que la utilizaras en todos los __.env__ y tambien cuando tengas que ingresar desde __pgAdmin__ o desde __SQLshell__. Cliqueas __"Siguiente"__
->>9. En el siguiente paso, te muestra el puerto en el que estará corriendo la base de datos, que es aquel que va a estar escuchando todo el tiempo. __Deja el puerto 5432__, no te recomiendo, en lo absoulto, que lo cambies, sumado a que luego, cambiarlo, no será tan sencillo.
->>10. A partir de aquí, le puedes dar a __"Siguiente"__ hasta que te aparezcla la opción __"El programa esta listo para iniciar la instalación"__ que también le darás siguiente y esperaras a que se termine de instalar 
->>11. Una vez finalizada la instalación, el ultimo panel tendra tildado el inicializador de __Stack Builder__. Lo dejas marcado y le das a terminar. Esto permitira que inicie para instalar todos los extras aparte de la base de datos.
->>12. Abierta la pantalla de __Stack Builder__ tendras que seleccionar a que base de datos quieres instalarle los complementos. Seleccionaras la base **PostgreSQL** y le das a __Next >__
->>13. En la lista de aplicaciones a instalar, ***MI*** sugerencia _(al igual que Fazt)_ es que selecciones los complementos en _"Database Drivers"_ si es que trabajas con .NET o Java u otro lenguaje.  
-_Si lo deseas, recomiendo investigar sobre las otras opciones_.  
->>14. Darle a _Next >_ siempre, a patir de ahora. Van a instalar estos complementos. Paciencia.  
->> ***Y listo, PostgreSQL ya esta instalado en tu Ordenador***  
->>> ### _Lo que sigue, no es tan nescesario_  
->>15. Lo que sigue es configurar para poder acceder desde cualquier consola. Copias la direccion de la carpeta bin, donde está instalado tu PostgreSQL, que si no cambiaste la ruta, sería algo así `C:\Program Files\PostgreSQL\`__XX__`\bin` siendo __"XX"__ la version de PostgreSQL.  
->>16. Vas al buscador de Windows y escribes __env__ y te aparecera y cliquearas la opción de ***"Editar las variables de entorno del sistema"***. 
->>17. Selecciona la opción __"Variables de entorno"__, luego a la opción __"Path"__ le das doble click. Te abrirá una ventana. Selecciona __"Nuevo"__ y allí pegarás la ruta que copiaste anterior mente.
->>18. Le das a __"Aceptar"__ a las tres ventanas y listo. Configurado para acceder desde cualquier consola.
->
->>### ___Linux___ 
->>> Un video de donde saqué la forma de hacerlo:  
->>>[PostgreSQL, pgAdmin3, Instalación en Linux (Ubuntu y distros similares) - FaztCode](https://www.youtube.com/watch?v=40uGNsi7ysc "FaztCode el mejor")  
->>> Enlace de donde saqué como hacerlo:  
->>>_[How to Install and Set up PostgreSQL Database on Ubuntu 22.04](https://linuxhint.com/install-and-setup-postgresql-database-ubuntu-22-04/ "Instalar PostgreSQL")_  
->>> _[Install PostgreSQL pgAdmin 4 on Ubuntu 22.04 LTS Jammy Linux](https://www.how2shout.com/linux/install-postgresql-pgadmin-4-on-ubuntu-22-04-lts-jammy-linux/ "Instalar pgAdmin 4")_
->>1. <!-- Tarea pendiente -->
-> 3. Y listo, ya tenés instalado PostgreSQL y pgAdmin para que empieces a utilizar la base de datos.
+> 3. Ahora vas a instalarlo
+> ### ___Windows___
+>> a. Si tienes Windows, aqui tienes la [guía para windows](./windows.md)
+> ### ___Linux___ 
+>> b. Si tienes Linux, aquí tienes la [guía de linux](./linux.md)  
+>> _Cabe aclarar que tanto **Postgres** como **pgAdmin** tienen documentación para instalar y los comandos necesarios para configurar su instalación en la distro que utilices_
+>4. Y listo, ya tenés instalado PostgreSQL y pgAdmin para que empieces a utilizar la base de datos.
 
 ## SQL shell
 
 SQL shell es la consola de PostgreSQL, en donde podes hacer todos los comandos SQL para manejar tu DB.  
 Ésta consola se instala junto con PostgreSQL, aunque también, si hiciste los pasos de path, puedes acceder a esta consola desde cualquier otra consola con el comando  
+
 ```
 psql -U postgres -h localhost -W
-``` 
+```
+
 >_(con este comando, te pedira la contraseña que usaste anterior mente que te recomendé anotar y que sea sencilla)_
+
+> _En **linux**, no existe sql shell. Simplemente entras a postrges por medio de la terminal de ubuntu con el siguiente comando_
+>```
+> sudo -u postgres psql
+>```
+> _No te pedirá contraseña ni nada. Pero si deberas definirle una para futuras conexiones y tambien para utilizar pgAdmin_
+
 
 Al ingresar a la consola de SQL shell te pedira una serie de datos, a lo que será mejor que vayas dando enter hasta que te pida tu _contraseña_.  
 
@@ -115,26 +91,22 @@ A continuación te dejo un par de comandos para que crees tu base de datos y pod
 >> Lista de [Datatypes](https://www.techonthenet.com/postgresql/datatypes.php "una lista muy util de Data types con SQL")
 
 
-
-## pgAdmin
+## **pgAdmin** 
 
 Otra forma de utilizar la base de datos (y más sencilla), es a través de una herramienta con interfaz grafica, como es pgAdmin.  
 
-Al ingresar a pgAdmin por primera vez, te va a pedir que definas una **Contraseña** maestra para pgAdming, que te la va a solicitar cada vez que entres.
-
-![Contraseña](./Images/Set_Password.png)
-
-> _Te sugiero que utilices la misma contraseña que usaste antes, al instalar PostgreSQL. y si es distinta, anótala._  
-
-Una vez definida la contraseña, le das a ✔OK y te vas a cliquearle a donde dice __Servers__
-
-Cuando le cliqueas allí, te aparecerá lo siguiente...
-
-![Connect to server](./Images/postgres_password.png)
-
-Aquí, te conectarás al servidor de postgres. Colocas la contraseña de usuario postgres que utilizaste al instalar esta DB.  
-Colocada la contraseña y dado a OK, ya tienes acceso a tus bases de datos. 
-Cliqueas en PostgreSQL y luego en Databases y tendras acceso a todas TUS bases de datos en tu computadora.
+Configurar tanto pgAdmin en Windows como en Ubuntu es casi igual. Lo que te voy a explicar a continuacion es esa pequeña diferencia.
+> ____
+>
+>### _configurar pgAdmin en **Windows**_
+> - El archivo [windows.md](./windows.md/#pgadmin) tiene, más abajo la explicacion de como configurarlo. Al terminarlo, puedes seguír aquí que en ambos casos es igual.
+>
+> ____
+>
+>### _configurar pgAdmin en **Ubuntu**_
+> - El archivo [linux.md](./linux.md/#pgadmin) contiene los pasos necesarios para poder configurar pgAdmin4 en Ubuntu. Una vez lo termines, puedes volver aquí para los otros pasos que son exactamente iguales.
+>
+> ____
 
 ![pgAdmin](./Images/DB.png)
 
@@ -148,4 +120,5 @@ y luego seleccionas cualquier tabla con click derecho y le das a la opcion __"Vi
 
 > pgAdmin es bastante sencillo de utilizar.
 
+>
 ***ESPERO QUE TE HAYA SIDO UTIL ESTA GIA DE INSTALACIÓN Y USO. SIN MÁS, PUEDES PASAR A LA GUÍA DE SEQUELIZE***
