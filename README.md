@@ -15,9 +15,9 @@ Te doy la bienvenida a esta guía para empezar tu proyecto. A continuación te d
 
 - Comienzos de un proyecto
   - [Comienzos del repo. Guía github](./github/README.md "Comenzar un repo y no morir en el intento")
-  <!-- -  [Bases de datos](./dataBase "Bases de datos")
-    - [Postgress y Pgadmin](./postgreSQL/README.md "relacionales?")
-    - [MongoDB, MongoAtlas y Mongoose](./mongodb/README.md "no relacionales?") 
+  -  [Bases de datos](./dataBase "Bases de datos")
+      - [Postgress y Pgadmin](./dataBase/postgresql/README.md "relacionales?")
+  <!--    - [MongoDB, MongoAtlas y Mongoose](./mongodb/README.md "no relacionales?") 
   - 
   - -->
 - Guías de comandos / extras  
