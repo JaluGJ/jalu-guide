@@ -1,77 +1,25 @@
-    (si descargaste esto, te recomiendo que lo abras con el preview de VSCode)
+<!-- Aqui va foto de guia -->
+>_Si te gustó y te sirvió esta guía, te invito a dejar una "🌟"_  
 
-# JALU-GUIA DE GITHUB PARA UN PF ORDENADO 
+>__Esta guía se va actualizando, junto al diccionario, a medida que voy aprendiendo cosas nuevas__
 
-Hola! Este md es una guía practica para las configuraciones rapidas y simples de githug junto a comandos, para poder hacer el pf en herny y muchos de estos comandos los utilizaras en el futuro en tu trabajo.
+# Jalu-guide
 
-REITERO, ES UNA GUIA SIMPLE, SE PUEDEN HACER COSAS MAS COMPLEJAS Y TAMBIEN ELEVAR EL NIVEL DE SEGURIDAD. PERO POR AHORA, VAMOS A LOS SIMPLE.
+Te doy la bienvenida a esta guía para empezar tu proyecto. A continuación te dejaré un pequeño indice con links de las distintas cosas que tiene este repositorio.  
 
- ## Crear el repositorio 
+>_Si estas empezando el proyecto desde cero, recomiendo ir en el orden del indice_
 
- ---
+>***TODOS LOS ENLACES, SI TE QUEDAS UNOS SEGUNDOS CON EL PUNTERO POR ENCIMA, APARECERA UN PEQUEÑO MENSAJE*** [colocate sobre mi por unos segundos](./README.md 'este enlace te lleva a este mismo archivo')
 
->_Uno de lo miembros del grupo deberá crear el repositorio de _github_ en donde estará alojado el repositorio._
+## __Indice__
 
-Entra a github.com y, al lado del menu de su usuario (donde aparece su foto en un pequeño circulo) tienen un simbolo  **"+"** al clickear, ven la opcion de __"new repository"__ el cual los dirije directamente para crear un nuevo repositorio. Le dan un nombre al repositorio. Les recomiendo fuertemente que le den el nombre que va a tener su proyecto, y no "PF-Henry-XX".
-
-Luego conservan la selección de que sea "public" y **no** añadan ni README file ni .gitignore aun. Esto es para que github les permita  les de los pasos para hacer la clonacion y preparar el repositorio. 
-
-Una vez dado el nombre, le dan a la opcion de "create repositoy" y luego, el dueño del respositorio sigue los pasos indicados para crear el repositorio. Y si, hacer todos los pasos de la primer opcion, desde el comando `echo "# XXX" >> README.md` hasta el ultimo comando `git push -u origin main`
-
-## Añadir miembros _colaboradores_ al repositorio
-
----
-
->_Es hora de añadir al equipo de trabajo al repo._
-
-Una vez creado el repo con el nombre del proyecto, deberá dar acceso a modificaciones a sus otros compañeros, para ello, el creador del repo debe ir a la seccion `settings` (o configuración), y a la opcion "collaborators" o "colaboradores"
-
-Tendran a la vista, un boton verde en el que se lee "Add people", al hacerle click, les aparecerá un modular en el cual les pide el ***nombre de usuario, el nombre completo o el email*** de las personas que seran colaboradores del proyecto.
-
-En este momento, piden los usuarios de el equipo, y añaden a los colaboradores.
-
->A los colaboradores les llegara un mail de invitacion para acceder a modificar el repo
-
-Una vez finalizado este paso, es hora de crear las protecciones y las ramas
-
-## Crear Ramas y Protegerlas
-
----
-
->_Un buen control sobre las ramas permitira que haya paz en el equipo._
-
-Ya el repositorio esta creado y estan añadidos todos los colaboradores. Si seguiste correctamente los pasos anteriores, tu repositorio debería estar ubicado sobre una rama llamada `main` y ya no debería existir una rama llamada `master`. 
->Si aun tienes una rama llamada master, te recomiendo que hagas los pasos que te indica github para subir un repo ( es decir, la parte de comandos que van desde `echo...` hasta el `git push...`)
-
-Bien, existen 2 maneras de 
-
-Ahora, ve nuevamente a la opcion `settings` (si es que no estas ahí aún) 
-
-## (Biblia de comandos para trabajar)
-    1. git checkout dev // ir a dev (antes de empezar a trabajar)
-    2. git pull origin dev // traer los cambios desde el remoto(antes de empezar a trabajar)
-    3. git checkout -b (nombre de la rama) // para crear e ir a esa rama.  
-    (la rama solo de  la tarea. no poner nada que no fuera lo de la rama)(antes de empezar a trabajar)"UserModel"
-    4. git push -u origin (nombre de la rama) // primer push para crear la rama en el remoto (este push se puede omitir)(antes de empezar a trabajar)"UserModel"
-
-    --- RECIEN AHORA PUEDE EMPEZAR A TRABAJAR EN EL CODIGO ---
-    --- UNA VEZ TERMINAN DE TRABAJAR, HACEN LO QUE SIGUE ---
-
-    git add . (o, mejor dicho, todos los archivos que van al commit)
-    git commit -m "bla, bla" 
-
-    ("ADD / userModel "
-    "FIX / userModel"
-    "BUG/ UserModel"
-    "ADD / UserRoute, getUsers Create)
-
-    git checkout dev
-    git pull origin dev (esto se hace siempre, por si alguien hizo cambios mientras trabajabas)
-    git checkout (nombre de la rama en que se trabajo) "UserModel"
-    git merge dev (ver si aparecen conflictos, si aparecen solucionarlos)
-    (si hay conflictos, resolverlos. y volver a hacer un commit)
-    git push
-
-    Hacer el pull request en github
-    (visual te tira un Link.... el link largo... con ctrl + click, vas a la direccion y ahi te da para hacer el pull request)
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+- Comienzos de un proyecto
+  - [Comienzos del repo. Guía github](./github/README.md "Comenzar un repo y no morir en el intento")
+  -  [Bases de datos](./dataBase "Bases de datos")
+      - [Postgress y Pgadmin](./dataBase/postgresql/README.md "relacionales?")
+  <!--    - [MongoDB, MongoAtlas y Mongoose](./mongodb/README.md "no relacionales?") 
+  - 
+  - -->
+- Guías de comandos / extras  
+  - [Comandos github](./comandos/github-commands.md 'La famosa bibila de comandos para trabajar y no matarse entre el grupo')
+  - [Diccionario de comandos en general](./comandos/diccionario.md 'Acá están todos los comandos que conozco y me fueron utiles')
