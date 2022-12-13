@@ -23,7 +23,7 @@ git push -u origin [nombre rama]
     git pull origin dev
     git checkout [nombre rama]
     git merge dev
-  git push
+    git push
 
 ***Files uploaded***  
 ***Archivos subidos***
