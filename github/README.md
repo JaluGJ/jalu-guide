@@ -204,7 +204,7 @@ Terminados estos pasos, es tiempo de ir a github y actualizar la rama `dev` con 
 
 >_Oh santo github, porfavor, que no haya conflictos_
 
-Si hicieron todo bien hasta ahora, y siguieton correctamente lo pasos, no deberian tener ningun problema para unir la rama que crearon y en la que trabajaron, con la rama `dev`.  
+Si hicieron todo bien hasta ahora, y siguieron correctamente lo pasos, no deberian tener ningun problema para unir la rama que crearon y en la que trabajaron, con la rama `dev`.  
 Lo que sigue es ir hacia el repositorio en Github y existen dos posibilidades.  
 
 1. Que aparezca un cartel que tiene el nombre de la rama que creaste y que al final tenga un recuadro verde que diga `Compare & pull request`

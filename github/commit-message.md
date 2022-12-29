@@ -33,7 +33,7 @@ El donde hace referencia a la posicion de la carpeta y archivos que hiciste el c
 |---|---|
 |(client/navbar)| Es en el frontend (por ello, client) y el archivo que se modifico o se agregó, es el **navbar**. <br> No es necesaria la extension del archivo|
 |(client/navbar/index)| En este caso, u otro similar donde sea necesario explcar que el cambio se dio sobre el archivo index, ya que suelen existir varios archivos index.|
-|(client/redux/action) | Aqui pueden agregar un lugar más, para der mas especificidad a que archivo fueron a modificar, por si no es suficiente solo decir el archivo final|
+|(client/redux/action) | Aqui pueden agregar un lugar más, para dar más especificidad a que archivo fueron a modificar, por si no es suficiente solo decir el archivo final|
 |(api/xxx-route)| Es en el backend (por ello, api) y el archivo que se modifico o se agrego es el **xxx-route**. <br> no es necesaria la extension del archivo|
 |(api/routes/index)| Al igual que antes, si se va a modificar el archivo index, no es suficiente información, por lo que es necesario especificar la carpeta|
 |||
@@ -48,7 +48,7 @@ Es buena practica que:
 3. No escribirlo en pasado  
 Abajo te dejo una listita de palabras clave para estos commits con un ejemplo
 
-|Palabra clabe|Definición|Español|Ejemplo|
+|Palabra clave|Definición|Español|Ejemplo|
 |---|---|---|---|
 |add|Es añadir un archivo, carpeta, funcion, etc|_añadir_| **add new yyy-route** |
 |fix|Es corregir y arreglar algo del codigo|_arreglar_| **fix bug on sidebar function** |
