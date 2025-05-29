@@ -62,9 +62,13 @@ Abajo te dejo una listita de palabras clave para estos commits con un ejemplo
 Bueno, como para que vean un par de ejemplos mezclando todas las partes del codigo, les dejo las siguientes lineas
 
 ```
-feat(api/route/index): add new routes for bbb-route
+feat(mod): add new routes for bbb-route
 
-fix(client/navbar): remove useEffect dependency cause loop
+fix(mod): remove useEffect dependency cause loop
 
-refactor(api/aaa-controler): add new folders and files to componentize
+refactor(mod): add new folders and files to componentize
+
+feat: new user control sistem
+
+fix: corrección manejo de contraseña
 ```
